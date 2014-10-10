@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en"  id="show-tips">
+<head>
+    <title>Режимы смешивания в CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/shower-bright/styles/screen.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/flipping.css">
+</head>
+<body class="list" spellcheck="false">
+ <!-- debug -->
+
+    <div class="hidden-svg-defs">
+        <div id="svg-parts" class="svg-defs">@@include('./assets/img/svg/parts.svg')</div>
+    </div>
+
+    <header class="caption">
+        <h1>Режимы смешивания в CSS</h1>
+        <p>Бухвалова Юлия, Livejournal</p>
+    </header>
+
+    <section class="slide slide--imgcenter js--togglemode" id="Cover"><div>
+        <h2 class="free-fly">Режимы смешивания в CSS</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide slide--vlm"><div>
+        <div class="slide__content">
+            <h2>background-blend-mode</h2>
+            <h2 class="next">mix-blend-mode</h2>
+        </div>
+        <footer>Режим смешивания слоев фона и режим наложения элементов страницы</footer>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide slide--vlm slide--horcenter"><div>
+
+    <div class="slide__content modes-wrapper">
+        <ul class="column column--left">
+            <li>normal</li>
+            <li>multiply</li>
+            <li>screen</li>
+            <li>overlay</li>
+            <li>darken</li>
+            <li>lighten</li>
+            <li>color-dodge</li>
+            <li>color-burn</li>
+        </ul>
+        <ul class="column column--right">
+            <li>hard-light</li>
+            <li>soft-light</li>
+            <li>difference</li>
+            <li>exclusion</li>
+            <li>hue</li>
+            <li>saturation</li>
+            <li>color</li>
+            <li>luminosity</li>
+        </ul>
+    </div>
+    <footer>Возможных значений меньше, чем доступных режимов в фотошопе</footer>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo--selectmode selectmode-demo">
+            <div class="selectmode-demo__content"></div>
+           <input type="range" min="0" max="360" class="inp-range"/>
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--dark"><div>
+        <h2 class="free-fly">Градиенты</h2>
+        <footer>С помощью режимов наложения из простых паттернов можно получить более сложные</footer>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo--gradient demo--bluecarbon js--togglemode">
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo--gradient demo--cicada js--togglemode">
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo--gradient demo--rainbow js--togglemode">
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+
+    <div class="demo--colorize colorize-demo js--togglemode">
+
+        <div class="colorize-demo__content">
+              <input type="range" min="0" max="360" class="inp-range"/>
+
+              <nav class="nav"><a href="#" class="nav__item nav__item--home"><span>home</span></a><a href="#" class="nav__item nav__item--blog"><span>blog</span></a><a href="#" class="nav__item nav__item--gallery"><span>gallery</span></a>
+              </nav>
+
+              <section class="section">
+                <h1>My Blog</h1>
+                <article class="article">
+                  <time class="article__datetime">15.06.2014</time>
+                  <h2 class="article__title">Rainy day</h2>
+                  <p>Nunc eu accumsan lorem, nec eleifend massa. Integer lobortis bibendum neque a pellentesque. Nunc ullamcorper hendrerit mauris, id gravida turpis facilisis in. </p>
+                  <p>Donec non diam eleifend, lobortis urna id, vestibulum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <div class="article__footer"><a href="#">0 comments</a></div>
+                </article>
+              </section>
+            </div>
+
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--dark"><div>
+        <h2 class="free-fly">CSS</h2>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="free-fly">background-blend-mode</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+
+        <pre class="list--steps">
+            <code>background-color: teal;<div class="demo--css demo--css-color"></div></code>
+            <code class="next">background-image: url(kitten.jpeg);<div class="demo--css demo--css-img"></div></code>
+            <code class="next">background-blend-mode: luminosity;<div class="demo--css demo--css-blend"></div></code>
+        </pre>
+
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide slide--tlen"><div>
+
+        <pre class="list--steps list--steps-tlen">
+            <code>background-color: #FFF;<div class="demo--tlen demo--tlen-color"></div></code>
+            <code class="next">background-image: url(trees.jpeg),<div class="demo--tlen demo--tlen-img"></div></code>
+<code class="next">    radial-gradient(circle, white 30%, transparent 75%),</code>
+<code class="next">    radial-gradient(circle, white 30%, transparent 75%),</code>
+<code class="next">    url(kitten.jpeg);</code>
+            <code class="next">background-blend-mode: overlay, color-dodge, color-dodge, luminosity;<div class="demo--tlen demo--tlen-blend"></div></code>
+        </pre>
+
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">Порядок слоев</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo-wrapper  js--togglemode">
+
+            <div class="column column--left">
+                Картинка над цветом
+                <div class="demo--colorimage">
+                </div>
+            </div>
+            <div class="column column--right">
+                Цвет над картинкой
+                <div class="demo--colorimage demo--colorimage-revert">
+                </div>
+            </div>
+
+        </div>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="free-fly">mix-blend-mode</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <pre><code>IMG {</code>
+        <code>    mix-blend-mode: multiply; </code>
+        <code>    }</code></pre>
+
+        <pre class="next"><code>.entry { </code>
+        <code>    mix-blend-mode: overlay; </code>
+        <code>    }</code></pre>
+
+    </div></section>
+
+    <section class="slide slide--sea slide--imgfull"><div>
+        <img src="./assets/img/demos/sea.jpg">
+        <a href="http://codepen.io/yoksel/pen/nveJl" class="abs-link">codepen.io/yoksel/pen/nveJl</a>
+
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--dark"><div>
+<h2 class="free-fly">Поддержка браузерами</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+
+    <ul class="list--support">
+        <li>
+            <dl class="browsers">
+                <dt>background-blend-mode</dt>
+                <dd class="browser firefox"></dd>
+                <dd class="browser chrome"></dd>
+                <dd class="browser opera"></dd>
+                <dd class="browser safari"></dd>
+                <dd class="browser ie no-support"></dd>
+            </dl>
+        </li>
+
+        <li class="next">
+            <dl class="browsers">
+                <dt>mix-blend-mode</dt>
+                <dd class="browser firefox"></dd>
+                <dd class="browser chrome browser-flag"></dd>
+                <dd class="browser opera  browser-flag"></dd>
+                <dd class="browser safari"></dd>
+                <dd class="browser ie no-support"></dd>
+            </dl>
+        </li>
+
+    </ul>
+
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+
+        <ul class="list--morespaces">
+            <li><b>Включить в Crome:</b><br/> chrome://flags/#enable-experimental-web-platform-features</li>
+            <li class="next"><b>Включить в Opera:</b><br/>
+       opera://flags/#enable-experimental-web-platform-features
+            </li>
+
+            <li class="next"><b>Узнать актуальную поддержку браузерами:</b><br/> <a href="http://caniuse.com/#search=blend">caniuse.com/#search=blend</a></li>
+        </ul>
+
+    </div></section>
+
+    <section class="slide bg--dark"><div>
+        <h2 class="free-fly">Послесловие</h2>
+    </div></section>
+
+    <section class="slide"><div>
+        <h3>Полезные ссылки</h3>
+            <ul>
+                <li><a href="http://www.w3.org/TR/compositing-1/">Спецификация</a> En</li>
+                <li class="next"><a href="https://dev.opera.com/articles/getting-to-know-css-blend-modes/">Getting to Know CSS Blend Modes</a> En</li>
+                <li class="next"><a href="http://codepen.io/collection/Hcdol/">Сборник экспериментов от Adobe</a></li>
+                <li class="next"><a href="http://codepen.io/collection/fEkjb/">Мои эксперименты</a></li>
+                <li class="next"><a href="http://css.yoksel.ru/background-blend-mode/">Background-blend-mode</a> (статья на русском)</li>
+                <li class="next"><a href="http://webstandardsdays.ru/2014/06/28/pres/web-instagram/">Как сделать Instagram в браузере</a> (презентация)</li>
+            </ul>
+    </div></section>
+
+    <section class="slide slide--about"><div>
+            <img src="./assets/img/me.jpeg" class="photo"/>
+            <h3>Бухвалова Юлия<span>Livejournal</span></h3>
+            <ul>
+                <li><a href="http://css.yoksel.ru/">css.yoksel.ru</a></li>
+                <li><a href="https://twitter.com/yoksel">@yoksel</a></li>
+                <li><a href="http://codepen.io/yoksel">codepen.io/yoksel</a></li>
+            </ul>
+    </div></section>
+
+    <section class="slide slide--horcenter"><div>
+        <h4>Онлайн: <a href="http://yoksel.github.io/blend-modes-26sep2014/">yoksel.github.io/blend-modes-26sep2014/</a></h4>
+        <img src="./assets/img/qr-code.svg" class="qr-code" />
+    </div></section>
+
+    <p class="badge">
+        <a href="https://github.com/shower/shower">Powered by Shower</a>
+    </p>
+
+    <div class="progress"><div></div></div>
+    <script src="assets/shower-core/shower.min.js"></script>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/selectmode.js"></script>
+    <script src="assets/js/togglemode.js"></script>
+    <script src="assets/js/colorize.js"></script>
+    <script src="assets/js/flipping.js"></script>
+    <script src="assets/js/enable-tips.js"></script>
+    <!-- <script src="//localhost:35731/livereload.js"></script> -->
+    <!-- Copyright © 2014 yoksel. -->
+</body>
+</html>
