@@ -961,6 +961,35 @@ PRE:before {
   background-blend-mode: screen;
 }
 
+.demo--fireplace {
+  display: inline-block;
+  position: relative;
+  width: 1000px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L), url(http://img-fotki.yandex.ru/get/6732/5091629.a2/0_85dee_99d30185_orig);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 0%, 50% 100%;
+  -webkit-background-size: contain, contain;
+  background-size: contain, contain;
+  background-blend-mode: lighten, normal;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.demo--fireplace:hover {
+  background-position: 0% 0%, 100% 100%;
+  background-blend-mode: normal;
+}
+.demo--fireplace:hover P {
+  text-shadow: 0 0 2px orangered;
+}
+
 .list--steps {
   position: relative;
 }
