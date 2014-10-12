@@ -6,6 +6,9 @@
     margin: auto;
     }
 
+.hidden {
+    display: none;
+    }
 
 /* SVG
 ------------------------- */
@@ -256,17 +259,27 @@ $svg-code-color: hsl(190, 70%, 75%);
 
 .bg--dark {
     background: #000;
+    transition: background 1s;
     H2 {
         color: #FFF;
         }
     }
+    .bg--dark-hover:hover {
+        background: orangered;
+        }
 .bg--dark-gray {
     background: #333;
     H2 {
         color: #FFF;
         }
     }
-
+.bg--stripes {
+    background: orange
+        linear-gradient(90deg,
+            rgba(255,255,255,.5) 50%,
+            rgba(255,255,255,0) 50%);
+    background-size: 2em 100%;
+}
 /* Columns
 ------------------------- */
 
@@ -295,8 +308,6 @@ $svg-code-color: hsl(190, 70%, 75%);
         }
     }
 
-
-
 .photo {
     float: left;
     width: 300px;
@@ -322,6 +333,12 @@ $svg-code-color: hsl(190, 70%, 75%);
 @import 'demo--knight';
 @import 'demo--fire';
 @import 'demo--fireplace';
+
+@import '_demo-devlogos';
+
+@import '_demo-knight-svg';
+
+@import '_demo-dragons';
 
 @import '_css-appear';
 

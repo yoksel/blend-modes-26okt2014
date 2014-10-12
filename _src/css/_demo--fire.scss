@@ -5,11 +5,13 @@
     background:
         url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L) no-repeat 50% 50%,
         linear-gradient(to right top,
-            indigo 50%, purple 50%
+            purple 33%,
+            indigo 33%, indigo 66%,
+            purple 66%
             );
     ;
 }
 
 .demo--fire-bbmode {
-    background-blend-mode: screen;
+    background-blend-mode: lighten;
 }

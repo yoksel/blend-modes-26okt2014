@@ -1,0 +1,52 @@
+.demo-knight-svg {
+    @include center;
+    width: 85%;
+    height: 354px;
+    text-align: center;
+    text-align: justify;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+
+    .demo-knight-svg__item {
+        position: relative;
+        display: inline-block;
+        width: 240px;
+
+        text-indent: 0 !important;
+        vertical-align: top;
+        IMG {
+            max-width: 100%;
+            }
+        svg {
+            width: 100%;
+            }
+
+        &:before {
+            content: none !important;
+            }
+        &:after {
+            content: attr(data-sign);
+            display: inline-block;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 0;
+            width: 1em;
+            height: 1em;
+            background: crimson;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 4em;
+            line-height: .95;
+            color: #FFF;
+            transform: translate(-90%, -50%);
+            }
+        &:first-child:after {
+            content: none;
+            }
+        }
+    }
