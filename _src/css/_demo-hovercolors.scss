@@ -1,0 +1,52 @@
+.demo--hovercolors {
+    width: 750px;
+    margin: 0 auto !important;
+    &__item {
+     position: relative;
+     display: block;
+     float: left;
+     width: 46%;
+     margin-bottom: 8%;
+     height: 230px;
+     box-sizing: border-box;
+     background: white url() 0 -1px no-repeat;
+     background-size: cover;
+     background-blend-mode: luminosity;
+     line-height: 0;
+     border: 15px solid #FFF;
+     border-radius: 30px;
+     box-shadow: 0 0 30px rgba(0,0,0,1);
+     transition: background-color .3s;
+
+     &:nth-child(n+3) {
+         margin-bottom: 0;
+        }
+    &:nth-child(even) {
+         float: right;
+        }
+
+    &:nth-child(4n + 1) {
+         background-image: url(http://img-fotki.yandex.ru/get/4514/yoksel.61/0_50261_8b68dcb6_L);
+        }
+    &:nth-child(4n + 2) {
+         background-image: url(http://img-fotki.yandex.ru/get/5508/yoksel.60/0_4f97f_211e87a7_L);
+        }
+    &:nth-child(4n + 3) {
+         background-image: url(http://img-fotki.yandex.ru/get/5604/yoksel.60/0_4f376_c12baf67_L);
+        }
+    &:nth-child(4n + 4) {
+         background-image: url(http://img-fotki.yandex.ru/get/5608/yoksel.62/0_50c75_7aa552fc_L);
+        }
+
+     &:before {
+         content: none !important;
+        }
+     &:hover {
+        background-color: transparent;
+        box-shadow: 0 0 40px 5px rgba(0,0,0,1);
+        }
+    }
+    &:after {
+        @include clear;
+    }
+}

@@ -1,4 +1,3 @@
-@charset "US-ASCII";
 @font-face {
   font-family: 'Ubuntu Condensed';
   font-style: normal;
@@ -23,25 +22,25 @@
   font-weight: normal;
 }
 
-/* map-keys($map-headers) */
+/* map-keys($map-headers) */
 .slide h2 {
   margin: 0 0 38.4px;
   font-size: 57.6px;
 }
 
-/* map-keys($map-headers) */
+/* map-keys($map-headers) */
 .slide h3 {
   margin: 0 0 36.8px;
   font-size: 55.2px;
 }
 
-/* map-keys($map-headers) */
+/* map-keys($map-headers) */
 .slide h4 {
   margin: 0 0 27.2px;
   font-size: 40.8px;
 }
 
-/* map-keys($map-headers) */
+/* map-keys($map-headers) */
 .slide h5 {
   margin: 0 0 19.2px;
   font-size: 28.8px;
@@ -338,7 +337,7 @@ PRE:before {
 }
 
 .bg--dark-gray {
-  background: #555;
+  background: #333;
 }
 .bg--dark-gray H2 {
   color: #FFF;
@@ -863,12 +862,103 @@ PRE:before {
 }
 
 .demo--vignette {
-  width: 700px;
-  height: 500px;
-  margin: 0 auto;
-  background-image: url(../../assets/img/demos/kitten-508.jpeg), -webkit-radial-gradient(white 50%, black);
-  background-image: url(../../assets/img/demos/kitten-508.jpeg), radial-gradient(white 50%, black);
+  width: 800px;
+  height: 533px;
+  margin: -10px auto 0;
+  background: url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL), -webkit-radial-gradient(rgba(7, 4, 22, 0) 50%, #070416);
+  background: url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL), radial-gradient(rgba(7, 4, 22, 0) 50%, #070416);
   background-blend-mode: multiply;
+  border-radius: 55px;
+}
+
+.demo--vignette-overlay {
+  background: -webkit-linear-gradient(0deg, rgba(82, 71, 133, 0.8) 33%, rgba(82, 71, 133, 0) 33%), -webkit-linear-gradient(180deg, rgba(82, 71, 133, 0.8) 33%, rgba(82, 71, 133, 0) 33%), url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL);
+  background: linear-gradient(90deg, rgba(82, 71, 133, 0.8) 33%, rgba(82, 71, 133, 0) 33%), linear-gradient(270deg, rgba(82, 71, 133, 0.8) 33%, rgba(82, 71, 133, 0) 33%), url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL);
+  background-blend-mode: normal, multiply;
+}
+
+.demo--hovercolors {
+  width: 750px;
+  margin: 0 auto !important;
+}
+.demo--hovercolors__item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 46%;
+  margin-bottom: 8%;
+  height: 230px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white url() 0 -1px no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  line-height: 0;
+  border: 15px solid #FFF;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px black;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+.demo--hovercolors__item:nth-child(n+3) {
+  margin-bottom: 0;
+}
+.demo--hovercolors__item:nth-child(even) {
+  float: right;
+}
+.demo--hovercolors__item:nth-child(4n + 1) {
+  background-image: url(http://img-fotki.yandex.ru/get/4514/yoksel.61/0_50261_8b68dcb6_L);
+}
+.demo--hovercolors__item:nth-child(4n + 2) {
+  background-image: url(http://img-fotki.yandex.ru/get/5508/yoksel.60/0_4f97f_211e87a7_L);
+}
+.demo--hovercolors__item:nth-child(4n + 3) {
+  background-image: url(http://img-fotki.yandex.ru/get/5604/yoksel.60/0_4f376_c12baf67_L);
+}
+.demo--hovercolors__item:nth-child(4n + 4) {
+  background-image: url(http://img-fotki.yandex.ru/get/5608/yoksel.62/0_50c75_7aa552fc_L);
+}
+.demo--hovercolors__item:before {
+  content: none !important;
+}
+.demo--hovercolors__item:hover {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 40px 5px black;
+  box-shadow: 0 0 40px 5px black;
+}
+.demo--hovercolors:after {
+  content: "";
+  display: table;
+  width: 100%;
+}
+
+.demo--knight {
+  display: inline-block;
+  width: 420px;
+  height: 530px;
+  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, -webkit-gradient(linear, , from(skyblue), to(#d1f589));
+  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, -webkit-linear-gradient(right bottom, skyblue 50%, #d1f589 50%);
+  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, linear-gradient(to left top, skyblue 50%, #d1f589 50%);
+}
+
+.demo--knight-bbmode {
+  background-blend-mode: darken;
+}
+
+.demo--fire {
+  display: inline-block;
+  width: 420px;
+  height: 530px;
+  background: url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L) no-repeat 50% 50%, -webkit-gradient(linear, , from(indigo), to(purple));
+  background: url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L) no-repeat 50% 50%, -webkit-linear-gradient(left bottom, indigo 50%, purple 50%);
+  background: url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L) no-repeat 50% 50%, linear-gradient(to right top, indigo 50%, purple 50%);
+}
+
+.demo--fire-bbmode {
+  background-blend-mode: screen;
 }
 
 .list--steps {

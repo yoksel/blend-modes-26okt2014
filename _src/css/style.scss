@@ -261,7 +261,7 @@ $svg-code-color: hsl(190, 70%, 75%);
         }
     }
 .bg--dark-gray {
-    background: #555;
+    background: #333;
     H2 {
         color: #FFF;
         }
@@ -316,6 +316,12 @@ $svg-code-color: hsl(190, 70%, 75%);
 @import '_gradient-cicada';
 @import '_colorize';
 @import '_vignette';
+
+@import '_demo-hovercolors';
+
+@import 'demo--knight';
+@import 'demo--fire';
+@import 'demo--fireplace';
 
 @import '_css-appear';
 

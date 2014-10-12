@@ -1,9 +1,24 @@
 .demo--vignette {
-  width: 700px;
-  height: 500px;
-  margin: 0 auto;
-  background-image:
-    url(../../assets/img/demos/kitten-508.jpeg),
-    radial-gradient(white 50%,hsl(0,0,0));
+  width: 800px;
+  height: 533px;
+  margin: -10px auto 0;
+  background:
+    url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL),
+    radial-gradient(
+        hsla(250, 70, 5, 0) 50%,
+        hsl(250, 70, 5));
   background-blend-mode: multiply;
-}
+  border-radius: 55px;
+    }
+
+.demo--vignette-overlay {
+    background:
+        linear-gradient(90deg,
+            hsla(250, 30, 40, .8) 33%,
+            hsla(250, 30, 40, 0) 33%),
+        linear-gradient(270deg,
+            hsla(250, 30, 40, .8) 33%,
+            hsla(250, 30, 40, 0) 33%),
+        url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL);
+    background-blend-mode: normal, multiply;
+    }

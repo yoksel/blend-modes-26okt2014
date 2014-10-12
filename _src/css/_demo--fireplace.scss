@@ -1,0 +1,34 @@
+.demo--fireplace {
+  display: inline-block;
+  position: relative;
+  width: 1000px;
+  height: 550px;
+  @include center;
+  background:
+    url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L),
+    url(http://img-fotki.yandex.ru/get/6732/5091629.a2/0_85dee_99d30185_orig)
+    ;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    50% 0%,
+    50% 100%;
+  background-size:
+    contain,
+    contain;
+  background-blend-mode: lighten, normal;
+  cursor: pointer;
+  transition: all 1s;
+
+    &:hover {
+      background-position:
+      0% 0%,
+      100% 100%;
+      background-blend-mode: normal;
+
+      P {
+        text-shadow: 0 0 2px orangered;
+        }
+      }
+  }

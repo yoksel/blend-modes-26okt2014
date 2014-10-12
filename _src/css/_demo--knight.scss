@@ -1,0 +1,15 @@
+.demo--knight {
+    display: inline-block;
+    width: 420px;
+    height: 530px;
+    background:
+        url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%,
+        linear-gradient(to left top,
+            skyblue 50%, hsl(80,85, 75) 50%
+            );
+    ;
+}
+
+.demo--knight-bbmode {
+    background-blend-mode: darken;
+}
