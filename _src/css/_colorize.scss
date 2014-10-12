@@ -1,6 +1,6 @@
 $base-color: hsl(181,55%,55%);
 $light-color: lighten($base-color, 15%);
-$dark-color: darken($base-color, 25%);
+$dark-color: #222; //darken($base-color, 25%);
 $headers-font-style: italic;
 $radius: .9em;
 

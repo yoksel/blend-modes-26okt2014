@@ -100,7 +100,7 @@
     </div></section>
 
     <!-- Slide -->
-    <section class="slide bg--dark-gray"><div>
+    <section class="slide bg--dark-gray js--togglemode"><div>
         <ul class="demo--hovercolors">
             <li class="demo--hovercolors__item"></li>
             <li class="demo--hovercolors__item"></li>
@@ -111,7 +111,7 @@
     </div></section>
 
     <!-- Slide -->
-    <section class="slide"><div>
+    <section class="slide js--togglemode"><div>
         <ul class="demo-devlogos">
             <li class="demo-devlogos__item demo-devlogos__item--git"></li>
             <li class="demo-devlogos__item demo-devlogos__item--grunt"></li>
@@ -120,7 +120,7 @@
     </div></section>
 
     <!-- Slide -->
-    <section class="slide"><div>
+    <section class="slide js--togglemode"><div>
         <div class="demo--vignette">
         </div>
     </div></section>
@@ -137,9 +137,9 @@
     </div></section> -->
 
     <!-- Slide -->
-    <section class="slide"><div>
+    <section class="slide js--togglemode js--blendmode-off"><div>
 
-    <div class="demo--colorize colorize-demo js--togglemode">
+    <div class="demo--colorize colorize-demo">
 
         <div class="colorize-demo__content">
               <input type="range" min="0" max="360" class="inp-range"/>
@@ -165,27 +165,12 @@
     <!-- Slide -->
     <section class="slide bg--dark"><div>
         <img src="assets/img/demos/crazy-birthday.png">
-        ???
+        <h2>???</h2>h2>
     </div></section>
 
     <!-- Slide -->
-    <!-- <section class="slide"><div>
+    <section class="slide"><div>
         (сравнение веса JPG/PNG c прозрачностью)
-    </div></section> -->
-
-    <!-- Slide -->
-    <section class="slide"><div>
-        <div class="demo demo--knight"></div>
-        <div class="demo demo--knight demo--knight-bbmode"></div>
-    </div></section>
-
-    <section class="slide"><div>
-        <div class="demo demo--fire"></div>
-        <div class="demo demo--fire demo--fire-bbmode"></div>
-    </div></section>
-
-    <section class="slide bg--dark bg--dark-hover"><div>
-        <div class="demo demo--fireplace"></div>
     </div></section>
 
     <!-- Slide -->
@@ -214,6 +199,23 @@
             </li>
         </ul>
     </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <div class="demo demo--knight"></div>
+        <div class="demo demo--knight demo--knight-bbmode next"></div>
+    </div></section>
+
+    <section class="slide"><div>
+        <div class="demo demo--fire"></div>
+        <div class="demo demo--fire demo--fire-bbmode next"></div>
+    </div></section>
+
+    <section class="slide bg--dark bg--dark-hover"><div>
+        <div class="demo demo--fireplace"></div>
+    </div></section>
+
+
 
 
     <!-- Slide -->
@@ -260,12 +262,6 @@
             </div>
         </div>
     </div></section>
-
-    <!-- Slide -->
-    <section class="slide"><div>
-        Спецэффекты (Свечение, искры, огонь)
-    </div></section>
-
 
     <!-- Slide -->
     <section class="slide bg--dark"><div>
@@ -346,6 +342,12 @@
 
     </div></section>
 
+    <section class="slide bg--dark slide--sea slide--imgfull"><div>
+        <img src="./assets/img/demos/disco.gif">
+        <a href="http://codepen.io/yoksel/pen/dezvy" class="abs-link">http://codepen.io/yoksel/pen/dezvy</a>
+
+    </div></section>
+
     <!-- Slide -->
     <section class="slide bg--dark"><div>
 <h2 class="free-fly">Поддержка браузерами</h2>
@@ -397,9 +399,58 @@
 
     <!-- Slide -->
     <section class="slide"><div>
-        FALLBACKS!!!!!
-        svg? polifill?
+<pre><code>&lt;svg class="svg-defs"></code>
+<code>    &lt;filter id="multiply" x="0" y="0"></code>
+<code>        &lt;feImage id="bgimage" result="bgimage"</code>
+<code>            x="0" y="0" width="300" height="206"</code>
+<code>            xlink:href="background-image.png"></code>
+<code>        &lt;/feImage></code>
+<code>        &lt;feTile in="bgimage">&lt;/feTile></code>
+<code>        &lt;feBlend mode="multiply" in2="SourceGraphic"/></code>
+<code>    &lt;/filter></code>
+<code>&lt;/svg></code></pre>
     </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <pre><code>&lt;svg class="pic" viewBox="0 0 300 161"></code>
+<code>    &lt;image xlink:href="myimage.jpg"</code>
+<code>        width="100%" height="100%"</code>
+<code>        filter="url(#multiply)"/></code>
+<code>&lt;/svg></code></pre>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide slide--dragons"><div>
+
+        <svg class="svg-defs">
+          <filter id="multiply" x="0" y="0">
+              <feImage id="bgimage" result="bgimage" x="0" y="0" width="300" height="206" xlink:href="http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M"></feImage>
+              <feTile in="bgimage"></feTile>
+              <feBlend mode="multiply" in2="SourceGraphic"/>
+            </filter>
+        </svg>
+        <div class="demo-dragons has-shapes">
+          <div class="demo-dragons__text">
+            <h1 class="demo-dragons__title">Dragons And Knights</h1>
+            <div class="pic pic--dragon">
+                <svg viewBox="0 0 300 161">
+                    <image xlink:href="http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M" width="100%" height="100%" filter="url(#multiply)"></image>
+                </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut lacus luctus, vestibulum ante in, facilisis mi. Pellentesque vehicula at nulla ac fermentum. </p>
+            <div class="pic pic--knight">
+                <svg viewBox="0 0 203 300">
+                    <image xlink:href="http://img-fotki.yandex.ru/get/6821/5091629.a1/0_855aa_7b6c51aa_M" width="100%" height="100%" filter="url(#multiply)"></image>
+                </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut lacus luctus, vestibulum ante in, facilisis mi. Pellentesque vehicula at nulla ac fermentum. </p>
+            <p>Phasellus nec sodales urna. Morbi in maximus magna. Nunc tincidunt justo augue, vel mattis risus condimentum sed. Proin sodales eget urna ut tempus. In bibendum justo vitae efficitur cursus. </p>
+            <p>In hac habitasse platea dictumst. Etiam et tortor pulvinar dui eleifend egestas. Nullam venenatis risus massa, at faucibus risus ullamcorper id. </p>
+            </div>
+        </div>
+    </div></section>
+
 
     <section class="slide bg--dark"><div>
         <h2 class="free-fly">Послесловие</h2>
