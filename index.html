@@ -21,7 +21,7 @@
         <p>Бухвалова Юлия, Livejournal</p>
     </header>
 
-    <section class="slide slide--imgcenter js--togglemode" id="Cover"><div>
+    <section class="slide slide--imgcenter js--togglemode js--blendmode-off" id="Cover"><div>
         <h2 class="free-fly">Режимы наложения в CSS</h2>
     </div></section>
 
@@ -37,7 +37,7 @@
     <section class="slide slide--vlm slide--horcenter"><div>
 
     <div class="slide__content modes-wrapper">
-        <ul class="column column--left">
+        <ol class="column column--left">
             <li>normal</li>
             <li>multiply</li>
             <li>screen</li>
@@ -46,8 +46,8 @@
             <li>lighten</li>
             <li>color-dodge</li>
             <li>color-burn</li>
-        </ul>
-        <ul class="column column--right">
+        </ol>
+        <ol class="column column--right">
             <li>hard-light</li>
             <li>soft-light</li>
             <li>difference</li>
@@ -56,7 +56,7 @@
             <li>saturation</li>
             <li>color</li>
             <li>luminosity</li>
-        </ul>
+        </ol>
     </div>
     </div></section>
 
@@ -384,9 +384,9 @@
     <section class="slide"><div>
 
         <ul class="list--morespaces">
-            <li><b>Включить в Crome:</b><br/> chrome://flags/#enable-experimental-web-platform-features</li>
+            <li><b>Включить в Crome:</b><br/> <a href="chrome://flags">chrome://flags/#enable-experimental-web-platform-features</a></li>
             <li class="next"><b>Включить в Opera:</b><br/>
-       opera://flags/#enable-experimental-web-platform-features
+       <a href="opera://flags/#enable-experimental-web-platform-features">opera://flags/#enable-experimental-web-platform-features</a>
             </li>
 
             <li class="next"><b>Узнать актуальную поддержку браузерами:</b><br/> <a href="http://caniuse.com/#search=blend">caniuse.com/#search=blend</a></li>
@@ -400,10 +400,10 @@
 <code>    &lt;filter id="multiply" x="0" y="0"></code>
 <code>        &lt;feImage id="bgimage" result="bgimage"</code>
 <code>            x="0" y="0" width="300" height="206"</code>
-<code>            xlink:href="background-image.png"></code>
+<code>            <mark>xlink:href="background-image.png"</mark></code>
 <code>        &lt;/feImage></code>
 <code>        &lt;feTile in="bgimage">&lt;/feTile></code>
-<code>        &lt;feBlend mode="multiply" in2="SourceGraphic"/></code>
+<code>        &lt;feBlend mode="<mark>multiply</mark>" in2="SourceGraphic"/></code>
 <code>    &lt;/filter></code>
 <code>&lt;/svg></code></pre>
     </div></section>
@@ -411,9 +411,9 @@
     <!-- Slide -->
     <section class="slide"><div>
         <pre><code>&lt;svg class="pic" viewBox="0 0 300 161"></code>
-<code>    &lt;image xlink:href="myimage.jpg"</code>
+<code>    &lt;image <mark>xlink:href="myimage.jpg"</mark></code>
 <code>        width="100%" height="100%"</code>
-<code>        filter="url(#multiply)"/></code>
+<code>        <mark>filter="url(#multiply)"</mark></code>
 <code>&lt;/svg></code></pre>
     </div></section>
 
@@ -456,12 +456,12 @@
     <section class="slide"><div>
         <h3>Полезные ссылки</h3>
             <ul>
-                <li><a href="http://www.w3.org/TR/compositing-1/">Спецификация</a> En</li>
-                <li class="next"><a href="https://dev.opera.com/articles/getting-to-know-css-blend-modes/">Getting to Know CSS Blend Modes</a> En</li>
+                <li><a href="http://www.w3.org/TR/compositing-1/">Спецификация</a> (англ.)</li>
+                <li class="next"><a href="https://dev.opera.com/articles/getting-to-know-css-blend-modes/">Getting to Know CSS Blend Modes</a> (англ.)</li>
                 <li class="next"><a href="http://codepen.io/collection/Hcdol/">Сборник экспериментов от Adobe</a></li>
                 <li class="next"><a href="http://codepen.io/collection/fEkjb/">Мои эксперименты</a></li>
-                <li class="next"><a href="http://css.yoksel.ru/background-blend-mode/">Background-blend-mode</a> (статья на русском)</li>
-                <li class="next"><a href="http://webstandardsdays.ru/2014/06/28/pres/web-instagram/">Как сделать Instagram в браузере</a> (презентация)</li>
+                <li class="next"><a href="http://css.yoksel.ru/background-blend-mode/">Background-blend-mode</a> (рус.)</li>
+                <li class="next"><a href="http://webstandardsdays.ru/2014/06/28/pres/web-instagram/">Как сделать Instagram в браузере</a> (рус., презентация)</li>
             </ul>
     </div></section>
 
@@ -476,7 +476,10 @@
     </div></section>
 
     <section class="slide slide--horcenter"><div>
-        <h4>Онлайн: <a href="http://yoksel.github.io/blend-modes-26sep2014/">yoksel.github.io/blend-modes-26sep2014/</a></h4>
+        <h4>Онлайн: <a href="http://yoksel.github.io/blend-modes-26okt2014/">yoksel.github.io/blend-modes-26okt2014/</a></h4>
+
+
+         поменять QR!!!!!
         <img src="./assets/img/qr-code.svg" class="qr-code" />
     </div></section>
 
