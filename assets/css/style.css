@@ -10,6 +10,12 @@
   font-weight: 400;
   src: local("Russo One"), local("RussoOne-Regular"), url(../../assets/fonts/Russo-One/font.woff) format("woff");
 }
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lobster"), url(../../assets/fonts/Lobster/font.woff) format("woff"), url(../../assets/fonts/Lobster/font.woff2) format("woff2");
+}
 .slide H1,
 .slide H2,
 .slide H3,
@@ -1028,6 +1034,7 @@ PRE:before {
 
 .demo-devlogos__item {
   display: inline-block;
+  position: relative;
   width: 250px;
   height: 250px;
   -webkit-background-size: contain;
@@ -1045,6 +1052,15 @@ PRE:before {
 }
 .demo-devlogos__item:before {
   content: none !important;
+}
+.demo-devlogos__item A {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: none;
 }
 
 .demo-devlogos__item--sass {

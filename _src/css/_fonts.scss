@@ -12,6 +12,15 @@
   src: local('Russo One'), local('RussoOne-Regular'), url(../../assets/fonts/Russo-One/font.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'),
+  url(../../assets/fonts/Lobster/font.woff) format('woff'),
+  url(../../assets/fonts/Lobster/font.woff2) format('woff2');
+}
+
 $font-headers: "Ubuntu Condensed",sans-serif;
 
 .slide H1,
