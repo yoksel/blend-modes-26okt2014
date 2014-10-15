@@ -10,6 +10,16 @@
     display: none;
     }
 
+.modes-wrapper {
+    counter-reset: modes-list;
+
+    LI:before {
+        counter-increment: modes-list !important;
+        content: counter(modes-list)".\00A0\2009"  !important;
+        }
+    }
+
+
 /* SVG
 ------------------------- */
 
@@ -316,6 +326,7 @@ $svg-code-color: hsl(190, 70%, 75%);
     }
 
 @import '_browsers';
+/*@import '_icons';*/
 @import '_selectmode';
 
 @import '_js-blendmode';

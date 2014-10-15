@@ -93,6 +93,14 @@
   display: none;
 }
 
+.modes-wrapper {
+  counter-reset: modes-list;
+}
+.modes-wrapper LI:before {
+  counter-increment: modes-list !important;
+  content: counter(modes-list) ".\00A0\2009" !important;
+}
+
 /* SVG
 ------------------------- */
 svg {
@@ -548,6 +556,7 @@ PRE:before {
 .opera-mini:before {
   background-position: -150px 0;
   }*/
+/*@import '_icons';*/
 .selectmode-demo {
   position: absolute;
   top: 0;
