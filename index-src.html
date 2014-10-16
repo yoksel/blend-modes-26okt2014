@@ -179,10 +179,25 @@
     </div></section>
 
     <!-- Slide -->
-    <section class="slide"><div>
-        (сравнение веса JPG/PNG c прозрачностью)
+    <section class="slide bg--stripes"><div>
 
-        TODO: поправить картинку (выбелить), добавить jpeg, png, gif
+        <ul class="demo-knight-png">
+            <li class="demo-knight-png__item">
+                <img src="assets/img/demos/knights/knight.jpg"/>
+                <div class="demo-knight-png__weight">JPEG, 89 Kb</div>
+            </li>
+
+            <li class="demo-knight-png__item next">
+                <img src="assets/img/demos/knights/knight-png24.png"/>
+                <div class="demo-knight-png__weight">PNG-24, 597 Kb</div>
+            </li>
+
+            <li class="demo-knight-png__item next">
+                <img src="assets/img/demos/knights/knight-png8.png"/>
+                <div class="demo-knight-png__weight">PNG-8, 133 Kb</div>
+            </li>
+        </ul>
+
     </div></section>
 
     <!-- Slide -->
@@ -250,24 +265,27 @@
 
         <svg class="svg-defs">
           <mask id="mask">
-             <image xlink:href="http://img-fotki.yandex.ru/get/6823/5091629.a2/0_85def_1111ab92_-1-L" width="203" height="300"/>
+             <image xlink:href="assets/img/demos/knights/knight-mask.png" width="203" height="300"/>
           </mask>
         </svg>
 
         <ul class="demo-knight-svg">
             <li class="demo-knight-svg__item">
-                <img src="http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L">
+                <img src="assets/img/demos/knights/knight.jpg">
+                <div class="demo-knight-png__weight">JPEG, 89 Kb</div>
             </li>
 
             <li class="demo-knight-svg__item next"  data-sign="+">
-                <img src="http://img-fotki.yandex.ru/get/6823/5091629.a2/0_85def_1111ab92_-1-L">
+                <img src="assets/img/demos/knights/knight-mask.png">
+                <div class="demo-knight-png__weight">PNG, 10 Kb</div>
             </li>
 
             <li class="demo-knight-svg__item next" data-sign="=">
                 <svg class="svg-knight" viewBox="0 0 203 300">
-                    <image xlink:href="http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L" width="100%" height="100%"
+                    <image xlink:href="assets/img/demos/knights/knight.jpg" width="100%" height="100%"
                           mask="url(#mask)"/>
                 </svg>
+                <div class="demo-knight-png__weight">JPEG + PNG, 99 Kb</div>
             </li>
         </ul>
     </div></section>
@@ -279,8 +297,9 @@
 
     <!-- Slide -->
     <section class="slide bg--dark"><div>
-        <img src="assets/img/demos/crazy-birthday.png">
-        <h2>???</h2>
+        <div class="demo-birthday">
+            <h1 class="demo-birthday__title">Crazy Birthday!</h1>
+        </div>
     </div></section>
 
     <!-- Slide -->

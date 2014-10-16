@@ -1,7 +1,7 @@
 .demo-knight-svg {
     @include center;
     width: 85%;
-    height: 354px;
+    height: 418px;
     text-align: center;
     text-align: justify;
 
@@ -11,10 +11,11 @@
         width: 100%;
     }
 
-    .demo-knight-svg__item {
+    &__item {
         position: relative;
         display: inline-block;
         width: 240px;
+        text-align: center;
 
         text-indent: 0 !important;
         vertical-align: top;
@@ -43,10 +44,15 @@
             font-size: 4em;
             line-height: .95;
             color: #FFF;
-            transform: translate(-90%, -50%);
+            transform: translate(-90%, -80%);
             }
         &:first-child:after {
             content: none;
             }
+        }
+    &__weight {
+        display: inline-block;
+        padding: 0 10px;
+        background: #FFF;
         }
     }
