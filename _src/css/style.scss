@@ -19,12 +19,18 @@
         }
     }
 
+.slide PRE MARK {
+    background: gold;
+    box-shadow: -5px 0 0 gold,
+                           5px 0 0 gold;
+    color: #000;
+}
 
 /* SVG
 ------------------------- */
 
 svg {
-    vertical-align: top;
+    /*vertical-align: top;*/
     overflow: visible;
     }
     .svg--ovh {
@@ -343,16 +349,20 @@ $svg-code-color: hsl(190, 70%, 75%);
 @import '_demo-devlogos';
 
 @import '_demo-knight-png';
-@import 'demo-knight-bbm';
-@import 'demo-fire';
-@import 'demo-fireplace';
+@import '_demo-knight-bbm';
+@import '_demo-fire';
+@import '_demo-fireplace';
 @import '_demo-knight-svg';
 @import '_demo-dragons';
 
 @import '_demo-birthday';
+@import '_demo-bird';
 
 @import '_demo-css-steps';
 
-@import '_demo-colorimage';
+@import '_demo-color-on-image';
+
+@import '_demo-sea';
+@import '_demo-shadows';
 
 /*@import '_print';*/

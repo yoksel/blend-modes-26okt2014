@@ -1,7 +1,7 @@
 .slide--dragons {
   font-family: Georgia, serif;
   background:
-    url(http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M);
+    url(../img/demos/knights/paper.jpeg);
   background-position: 50% 50%;
   }
 .demo-dragons {
@@ -62,8 +62,8 @@
     /*margin: 0 2em 2em -3em;*/
     margin: 0 2em 1em 0em;
     background-image:
-        url(http://img-fotki.yandex.ru/get/6840/5091629.a1/0_855a9_b872dbe5_M),
-        url(http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M);
+        url(../img/demos/knights/dragon.jpeg),
+        url(../img/demos/knights/paper.jpeg);
     }
 .pic--knight {
     float: right;
@@ -72,8 +72,8 @@
     /*margin: 0 -3em 2em 2em;*/
     margin: 0 0 1em 1em;
     background-image:
-        url(http://img-fotki.yandex.ru/get/6821/5091629.a1/0_855aa_7b6c51aa_M),
-        url(http://img-fotki.yandex.ru/get/6846/5091629.a1/0_8558d_406830d_M);
+        url(../img/demos/knights/knight-to-left.jpeg),
+        url(../img/demos/knights/paper.jpeg);
     }
 
 .has-modes {

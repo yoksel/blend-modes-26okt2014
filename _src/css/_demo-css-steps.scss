@@ -39,10 +39,10 @@
     margin: auto;
     background-color: #FFF;
     background-image:
-        url(../../assets/img/demos/tlen-trees.jpeg),
+        url(../../assets/img/demos/tlen/trees.jpeg),
       radial-gradient(circle, white 30%, transparent 75%),
       radial-gradient(circle, white 30%, transparent 75%),
-      url(../../assets/img/demos/tlen-kitten.jpeg)
+      url(../../assets/img/demos/tlen/kitten.jpeg)
       ;
       background-position:
         50% 50%,
@@ -69,7 +69,4 @@
     }
 .demo--tlen-img {
     background-blend-mode: normal;
-    }
-
-.demo--tlen-blend {
     }

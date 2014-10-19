@@ -8,14 +8,13 @@ $color5: darken(#FC5B3F, $dark);
 
 
 .demo-birthday {
-  display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background:
-    url(http://img-fotki.yandex.ru/get/6836/5091629.a2/0_85dd3_64d440c7_M),
+    url(../img/demos/bengal-L-64.gif),
     linear-gradient(60deg,
       $color1 20%,
       $color2 20%, $color2 40%,
@@ -35,7 +34,7 @@ $color5: darken(#FC5B3F, $dark);
     repeat,
     repeat;
   background-position:
-    55% -7%,
+    55% 3%,
     50% 50%,
     50% 50%;
   background-size:

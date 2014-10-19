@@ -3,7 +3,7 @@
   height: 533px;
   margin: -10px auto 0;
   background:
-    url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL),
+    url(../img/demos/vignette.jpeg),
     radial-gradient(
         hsla(250, 70, 5, 0) 50%,
         hsl(250, 70, 5));
@@ -19,6 +19,6 @@
         linear-gradient(270deg,
             hsla(250, 30, 40, .8) 33%,
             hsla(250, 30, 40, 0) 33%),
-        url(http://img-fotki.yandex.ru/get/4703/yoksel.5f/0_4dfa6_fb73f630_XL);
+        url(../img/demos/vignette.jpeg);
     background-blend-mode: normal, multiply;
     }
