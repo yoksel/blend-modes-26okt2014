@@ -1,7 +1,7 @@
 $selectmode-width: 890;
 $selectmode-height: 560;
 
-.selectmode-demo {
+.demo-selectmode {
   position: absolute;
   top: 0;
   bottom: 1em;
@@ -33,7 +33,7 @@ $selectmode-height: 560;
       }
   }
 
-.selectmode-demo__content {
+.demo-selectmode__content {
   display: inline-block;
   position: relative;
   width: #{$selectmode-width}px;

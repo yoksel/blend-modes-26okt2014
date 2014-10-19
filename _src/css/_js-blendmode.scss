@@ -1,12 +1,14 @@
-.js--togglemode {}
-    .js--togglemode .text-off {
+.js-togglemode {}
+    .js-togglemode .text-off {
         display: none;
         }
-    .js--blendmode-off {
+    .js-blendmode--off {
         background-blend-mode: normal !important;
+        mix-blend-mode: normal !important;
 
         * {
             background-blend-mode: normal !important;
+            mix-blend-mode: normal !important;
             }
         .text-on {
             display: none;
@@ -15,7 +17,7 @@
             display: block;
             }
         }
-    .js--blendmode-control {
+    .js-blendmode-control {
         position: absolute;
         top: 1em;
         right: 1em;
@@ -30,7 +32,7 @@
         text-align: left;
         font-size: .9em;
         color: greenyellow;
-        .js--blendmode-off & {
+        .js-blendmode--off & {
             box-shadow: 0 0 0 10px transparentize(#333,.5);
             }
         }

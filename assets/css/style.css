@@ -563,8 +563,53 @@ PRE:before {
 .opera-mini:before {
   background-position: -150px 0;
   }*/
+.js-togglemode .text-off {
+  display: none;
+}
+
+.js-blendmode--off {
+  background-blend-mode: normal !important;
+  mix-blend-mode: normal !important;
+}
+.js-blendmode--off * {
+  background-blend-mode: normal !important;
+  mix-blend-mode: normal !important;
+}
+.js-blendmode--off .text-on {
+  display: none;
+}
+.js-blendmode--off .text-off {
+  display: block;
+}
+
+.js-blendmode-control {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 70px;
+  padding: 1rem;
+  background: #222;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 0 10px rgba(173, 255, 47, 0.5);
+  box-shadow: 0 0 0 10px rgba(173, 255, 47, 0.5);
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: .9em;
+  color: greenyellow;
+}
+.js-blendmode--off .js-blendmode-control {
+  -webkit-box-shadow: 0 0 0 10px rgba(51, 51, 51, 0.5);
+  box-shadow: 0 0 0 10px rgba(51, 51, 51, 0.5);
+}
+
+.text-off {
+  color: #999;
+}
+
 /*@import '_icons';*/
-.selectmode-demo {
+.demo-selectmode {
   position: absolute;
   top: 0;
   bottom: 1em;
@@ -574,7 +619,7 @@ PRE:before {
   height: 560px;
   margin: auto;
 }
-.selectmode-demo:before {
+.demo-selectmode:before {
   content: '';
   display: block;
   position: absolute;
@@ -584,7 +629,7 @@ PRE:before {
   top: 50px;
   background: currentColor;
 }
-.selectmode-demo .inp-range {
+.demo-selectmode .inp-range {
   position: absolute;
   left: 0;
   right: 0;
@@ -594,7 +639,7 @@ PRE:before {
   cursor: pointer;
 }
 
-.selectmode-demo__content {
+.demo-selectmode__content {
   display: inline-block;
   position: relative;
   width: 890px;
@@ -655,49 +700,6 @@ PRE:before {
   border: .6em solid transparent;
   border-left: 0;
   border-color: transparent rgba(255, 255, 255, 0.75) transparent;
-}
-
-.js--togglemode .text-off {
-  display: none;
-}
-
-.js--blendmode-off {
-  background-blend-mode: normal !important;
-}
-.js--blendmode-off * {
-  background-blend-mode: normal !important;
-}
-.js--blendmode-off .text-on {
-  display: none;
-}
-.js--blendmode-off .text-off {
-  display: block;
-}
-
-.js--blendmode-control {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  width: 70px;
-  padding: 1rem;
-  background: #222;
-  border: 0;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 0 0 10px rgba(173, 255, 47, 0.5);
-  box-shadow: 0 0 0 10px rgba(173, 255, 47, 0.5);
-  outline: none;
-  cursor: pointer;
-  text-align: left;
-  font-size: .9em;
-  color: greenyellow;
-}
-.js--blendmode-off .js--blendmode-control {
-  -webkit-box-shadow: 0 0 0 10px rgba(51, 51, 51, 0.5);
-  box-shadow: 0 0 0 10px rgba(51, 51, 51, 0.5);
-}
-
-.text-off {
-  color: #999;
 }
 
 .demo--gradient {
@@ -1062,9 +1064,9 @@ PRE:before {
   display: inline-block;
   width: 420px;
   height: 530px;
-  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, -webkit-gradient(linear, , from(skyblue), to(#d1f589));
-  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, -webkit-linear-gradient(right bottom, skyblue 50%, #d1f589 50%);
-  background: url(http://img-fotki.yandex.ru/get/5114/5091629.a1/0_85598_be06401e_L) no-repeat 50% 50%, linear-gradient(to left top, skyblue 50%, #d1f589 50%);
+  background: url(../img/demos/knights/knight-L.jpg) no-repeat 50% 50%, -webkit-gradient(linear, , from(skyblue), to(#d1f589));
+  background: url(../img/demos/knights/knight-L.jpg) no-repeat 50% 50%, -webkit-linear-gradient(right bottom, skyblue 50%, #d1f589 50%);
+  background: url(../img/demos/knights/knight-L.jpg) no-repeat 50% 50%, linear-gradient(to left top, skyblue 50%, #d1f589 50%);
 }
 
 .demo--knight-bbmode {

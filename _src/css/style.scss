@@ -326,26 +326,26 @@ $svg-code-color: hsl(190, 70%, 75%);
     }
 
 @import '_browsers';
-/*@import '_icons';*/
-@import '_selectmode';
-
 @import '_js-blendmode';
 
-@import '_gradients';
-@import '_gradient-bluecarbon';
-@import '_gradient-rainbow';
-@import '_gradient-circle';
-@import '_gradient-cicada';
-@import '_colorize';
-@import '_vignette';
+/*@import '_icons';*/
+@import '_demo-selectmode';
+
+@import '_mixins-gradients';
+@import '_demo-gradient-bluecarbon';
+@import '_demo-gradient-rainbow';
+@import '_demo-gradient-circle';
+@import '_demo-gradient-cicada';
+@import '_demo-colorize';
+@import '_demo-vignette';
 
 @import '_demo-hovercolors';
 @import '_demo-devlogos';
 
 @import '_demo-knight-png';
-@import 'demo--knight';
-@import 'demo--fire';
-@import 'demo--fireplace';
+@import 'demo-knight-bbm';
+@import 'demo-fire';
+@import 'demo-fireplace';
 @import '_demo-knight-svg';
 @import '_demo-dragons';
 
@@ -353,6 +353,6 @@ $svg-code-color: hsl(190, 70%, 75%);
 
 @import '_demo-css-steps';
 
-@import '_colorimage';
+@import '_demo-colorimage';
 
 /*@import '_print';*/

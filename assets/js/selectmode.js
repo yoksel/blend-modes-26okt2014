@@ -8,8 +8,8 @@ var selectmode = function(){
 
   var modes = ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"];
 
-  var demo = doc.querySelector(".selectmode-demo");
-  var demoContent = doc.querySelector(".selectmode-demo__content");
+  var demo = doc.querySelector(".demo-selectmode");
+  var demoContent = doc.querySelector(".demo-selectmode__content");
   var rangeColor = demo.querySelector(".inp-range");
 
   var elemList = doc.createElement( "ul" );
