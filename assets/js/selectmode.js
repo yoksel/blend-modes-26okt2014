@@ -16,7 +16,7 @@ var selectmode = function(){
   elemList.classList.add( "list--modes" );
   var listModes = demoContent.appendChild( elemList );
 
-  var defaultColor = "white";//"hsl(180,100%,30%)";
+  var defaultColor = "hsl(180,100%,30%)";
   demo.style.color = defaultColor;
   demoContent.style.backgroundColor = defaultColor;
 
