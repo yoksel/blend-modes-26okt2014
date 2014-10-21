@@ -1,5 +1,4 @@
 .slide--dragons {
-  font-family: Georgia, serif;
   background:
     url(../img/demos/knights/paper.jpeg);
   background-position: 50% 50%;
@@ -7,6 +6,7 @@
 .demo-dragons {
   width: 740px;
   margin: 0 auto;
+  font-family: Georgia, serif;
   &:after {
     content: '';
     display: table;

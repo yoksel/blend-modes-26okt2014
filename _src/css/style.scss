@@ -54,9 +54,9 @@ svg {
     height: 480px;
     margin: 0 auto;
     }
+
 /* Slides
 ------------------------- */
-
 .slide {
     &>DIV {
         top: 0;
@@ -70,6 +70,7 @@ svg {
     &:after {
         right: 1em;
         bottom: 1em;
+        mix-blend-mode: difference;
         }
         .full &:after {
             left: auto;
