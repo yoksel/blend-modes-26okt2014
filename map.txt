@@ -3,9 +3,6 @@ TODO
 2. Флаги на слайдах с частичной поддержкой
 3. Иконки для ссылок
 
-4. СПИСОК  БАГОВ!
-
-5: TARGET
 --------------------------------------------
 
 ВСТУПЛЕНИЕ
@@ -395,7 +392,7 @@ mix-blend-mode - c Firefox(32), но со странностями, Chrome с 31
 WARNING
 - mix c bb blend может уронить браузер (FF)
 - FF - rgba  в тенях
-- в сафари не работают hue, saturation, color, luminocity
+- в сафари не работают hue, saturation, color, luminosity
 
 ---*---
 
