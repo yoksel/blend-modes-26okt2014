@@ -210,7 +210,7 @@
         <ul class="demo-knight-png">
             <li class="demo-knight-png__item">
                 <img src="assets/img/demos/knights/knight-M.jpg"/>
-                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
+                <div class="demo-knight-png__weight">JPEG, 20 Kb</div>
             </li>
 
             <li class="demo-knight-png__item next">
@@ -220,7 +220,7 @@
 
             <li class="demo-knight-png__item next">
                 <img src="assets/img/demos/knights/knight-M-png8.png"/>
-                <div class="demo-knight-png__weight">PNG-8, 31 Kb</div>
+                <div class="demo-knight-png__weight">PNG-8, 28 Kb</div>
             </li>
         </ul>
 
@@ -349,7 +349,7 @@
 
     <!-- Slide -->
     <section class="slide"><div>
-        <h2 class="free-fly">Надписи, которые<br> видно всегда</h2>
+        <h2 class="free-fly">Текст, который видно всегда</h2>
     </div></section>
 
     <!-- Slide -->
@@ -435,6 +435,45 @@
 
         <pre class="next"><code>.entry { </code>
         <code>    mix-blend-mode: <mark>overlay</mark>; </code>
+        <code>    }</code></pre>
+
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">Isolation</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--stripes js-togglemode"><div>
+        <div class="demo-isolation">
+            <dl class="list-isolation">
+                <dt class="list-isolation__title">isolation: auto;</dt>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+            </dl>
+            <dl class="list-isolation list-isolation--isolate">
+                <dt class="list-isolation__title">opacity: .99;</dt>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+            </dl>
+        </div>
+
+<!--
+opacity
+filters
+3D transforms (2D transforms must NOT cause isolation)
+blending
+masking
+ -->
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <pre><code>.block { </code>
+        <code>    isolation: <mark>isolate</mark>; </code>
         <code>    }</code></pre>
 
     </div></section>
