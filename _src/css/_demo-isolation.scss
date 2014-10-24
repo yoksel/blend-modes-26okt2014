@@ -37,8 +37,7 @@
         }
     &--isolate {
         opacity: .99;
-        /*isolation: isolate;*/
-        /*isolation: isolate !important;*/
-        /*isolation: isolate;*/
+        /* doesn't work in FF */
+        isolation: isolate;
         }
     }
