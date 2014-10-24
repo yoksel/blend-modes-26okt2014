@@ -65,8 +65,11 @@ $bg-size: 5.5em;
      background: gold;
      border-radius: 50%;
      box-shadow: box-shadow();
-     animation: box-shadow 1s infinite;
      }
+
+     :target .demo-shadows__shadows {
+        animation: box-shadow 1s infinite;
+        }
 
 @keyframes box-shadow {
     33% {

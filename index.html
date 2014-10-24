@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html lang="en"  id="show-tips">
 <head>
     <title>Режимы наложения в CSS</title>
@@ -23,6 +23,27 @@
 
     <section class="slide slide--imgcenter js-togglemode js-blendmode--off" id="Cover"><div>
         <h2 class="free-fly">Режимы наложения в CSS</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide slide--vlm"><div>
+        <div class="slide__content">
+            <h4>Презентация в лучшем виде:</h4>
+            <ul class="list--glasses">
+                <li>
+                    <span class="browser chrome"></span> <span class="list--glasses__sign">+</span> флаг: <i>chrome://flags/#enable-experimental-web-platform-features</i>
+                </li>
+                <li>
+                    <span class="browser opera"></span> <span class="list--glasses__sign">+</span> флаг: <i>opera://flags/#enable-experimental-web-platform-features</i>
+                </li>
+            </ul>
+            <p class="tooltip--glasses">Скопируйте ссылку на флаг в адресную строку браузера, включите флаг и&nbsp;перезапустите браузер.</p>
+            <h4>Так себе:</h4>
+            <ul class="list--glasses">
+                <li><span class="browser safari"></span> <span class="list--glasses__sign">и</span> <span class="browser firefox"></span>
+                </li>
+            </ul>
+        </div>
     </div></section>
 
     <!-- Slide -->
@@ -179,12 +200,17 @@
     </div></section>
 
     <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">PNG</h2>
+    </div></section>
+
+    <!-- Slide -->
     <section class="slide bg--stripes"><div>
 
         <ul class="demo-knight-png">
             <li class="demo-knight-png__item">
                 <img src="assets/img/demos/knights/knight-M.jpg"/>
-                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
+                <div class="demo-knight-png__weight">JPEG, 20 Kb</div>
             </li>
 
             <li class="demo-knight-png__item next">
@@ -194,10 +220,49 @@
 
             <li class="demo-knight-png__item next">
                 <img src="assets/img/demos/knights/knight-M-png8.png"/>
-                <div class="demo-knight-png__weight">PNG-8, 31 Kb</div>
+                <div class="demo-knight-png__weight">PNG-8, 28 Kb</div>
             </li>
         </ul>
 
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">SVG-маски</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--stripes"><div>
+
+        <svg class="svg-defs">
+          <mask id="mask">
+             <image xlink:href="assets/img/demos/knights/knight-mask-M.png" width="240" height="354"/>
+          </mask>
+        </svg>
+
+        <ul class="demo-knight-svg">
+            <li class="demo-knight-svg__item">
+                <img src="assets/img/demos/knights/knight-M.jpg">
+                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
+            </li>
+
+            <li class="demo-knight-svg__item next"  data-sign="+">
+                <img src="assets/img/demos/knights/knight-mask-M.png">
+                <div class="demo-knight-png__weight">PNG, 4 Kb</div>
+            </li>
+
+            <li class="demo-knight-svg__item next" data-sign="=">
+                <svg class="svg-knight" viewBox="0 0 240 354">
+                    <image xlink:href="assets/img/demos/knights/knight-M.jpg" width="100%" height="100%"
+                          mask="url(#mask)"/>
+                </svg>
+                <div class="demo-knight-png__weight">JPEG + PNG, 25 Kb</div>
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="free-fly">Режимы наложения</h2>
     </div></section>
 
     <!-- Slide -->
@@ -266,41 +331,6 @@
 
     <!-- Slide -->
     <section class="slide"><div>
-        <h2 class="free-fly">Альтернатива: SVG-маски</h2>
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide bg--stripes"><div>
-
-        <svg class="svg-defs">
-          <mask id="mask">
-             <image xlink:href="assets/img/demos/knights/knight-mask-M.png" width="240" height="354"/>
-          </mask>
-        </svg>
-
-        <ul class="demo-knight-svg">
-            <li class="demo-knight-svg__item">
-                <img src="assets/img/demos/knights/knight-M.jpg">
-                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
-            </li>
-
-            <li class="demo-knight-svg__item next"  data-sign="+">
-                <img src="assets/img/demos/knights/knight-mask-M.png">
-                <div class="demo-knight-png__weight">PNG, 4 Kb</div>
-            </li>
-
-            <li class="demo-knight-svg__item next" data-sign="=">
-                <svg class="svg-knight" viewBox="0 0 240 354">
-                    <image xlink:href="assets/img/demos/knights/knight-M.jpg" width="100%" height="100%"
-                          mask="url(#mask)"/>
-                </svg>
-                <div class="demo-knight-png__weight">JPEG + PNG, 25 Kb</div>
-            </li>
-        </ul>
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide"><div>
         <h2 class="free-fly">Спецэффекты</h2>
     </div></section>
 
@@ -314,6 +344,25 @@
     <!-- Slide -->
     <section class="slide bg--dark js-togglemode"><div>
         <div class="demo-bird">
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">Текст, который видно всегда</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--dark js-togglemode"><div>
+        <div class="demo-numbers">
+        <ul class="demo-numbers__list">
+          <li class="demo-numbers__item"><span>1</span></li>
+          <li class="demo-numbers__item next"><span>2</span></li>
+          <li class="demo-numbers__item next"><span>3</span></li>
+          <li class="demo-numbers__item next"><span>4</span></li>
+          <li class="demo-numbers__item next"><span>5</span></li>
+          <li class="demo-numbers__item next"><span>6</span></li>
+        </ul>
         </div>
     </div></section>
 
@@ -391,6 +440,45 @@
     </div></section>
 
     <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">Isolation</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--stripes js-togglemode"><div>
+        <div class="demo-isolation">
+            <dl class="list-isolation">
+                <dt class="list-isolation__title">isolation: auto;</dt>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+            </dl>
+            <dl class="list-isolation list-isolation--isolate">
+                <dt class="list-isolation__title">opacity: .99;</dt>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+                <dd class="list-isolation__item"></dd>
+            </dl>
+        </div>
+
+<!--
+opacity
+filters
+3D transforms (2D transforms must NOT cause isolation)
+blending
+masking
+ -->
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <pre><code>.block { </code>
+        <code>    isolation: <mark>isolate</mark>; </code>
+        <code>    }</code></pre>
+
+    </div></section>
+
+    <!-- Slide -->
     <section class="slide js-togglemode"><div>
         <div class="demo-sea">
             <h1 class="demo-sea__title">Sea</h1>
@@ -439,16 +527,21 @@
                 <dd class="browser ie no-support"></dd>
             </dl>
         </li>
-
     </ul>
 
+    <div class="next"><h3>Проблемы</h3>
+    <ul>
+        <li><code>mix-blend-mode</code> + <code>background-blend-mode</code> могут уронить Firefox</li>
+        <li class="next">в Firefox градиенты с <code>color-burn</code> отрисовываются без полутонов</li>
+        <li class="next">в Safari не работают режимы <code>hue</code>, <code>saturation</code>, <code>color</code>, <code>luminosity</code></li>
+    </ul></div>
     </div></section>
 
     <!-- Slide -->
     <section class="slide"><div>
 
         <ul class="list--morespaces">
-            <li><b>Включить в Crome:</b><br/> chrome://flags/#enable-experimental-web-platform-features</li>
+            <li><b>Включить в Chrome:</b><br/> chrome://flags/#enable-experimental-web-platform-features</li>
             <li class="next"><b>Включить в Opera:</b><br/>
        opera://flags/#enable-experimental-web-platform-features
             </li>
@@ -464,7 +557,7 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="free-fly">SVG-фильтры</h2>
+        <h2 class="free-fly">SVG</h2>
     </div></section>
 
     <!-- Slide -->
@@ -550,9 +643,6 @@
 
     <section class="slide slide--horcenter"><div>
         <h4>Онлайн: <a href="http://yoksel.github.io/blend-modes-26okt2014/">yoksel.github.io/blend-modes-26okt2014/</a></h4>
-
-
-         поменять QR!!!!!
         <img src="./assets/img/qr-code.svg" class="qr-code" />
     </div></section>
 
