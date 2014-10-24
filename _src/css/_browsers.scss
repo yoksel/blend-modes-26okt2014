@@ -34,6 +34,9 @@ $browser-size: 64px;
     font-weight: bold;
     white-space: nowrap;
     }
+    .list--glasses & {
+      margin-right: 0;
+      }
   }
   .list--support-stacks .browser {
     margin-right: 11px;
@@ -42,6 +45,9 @@ $browser-size: 64px;
     opacity: .5;
     }
 
+.browser-partial {
+  overflow: hidden;
+  }
 .browser-flag:before{
   content: "";
   position: absolute;
@@ -54,6 +60,7 @@ $browser-size: 64px;
   border-width: 8px 12px;
   border-right-color: transparent;
   }
+.browser-partial:after,
 .browser-flag:after {
     content: "";
     position: absolute;
@@ -134,6 +141,35 @@ $browser-size: 64px;
     }
   }
 
+.list--glasses {
+  margin: 0 0 1rem 0 !important;
+  }
+
+.tooltip--glasses {
+  display: inline-block;
+  width: 800px;
+  margin: 0 0 2rem 0 !important;
+  font-size: .7em;
+  font-style: italic;
+  color: #999;
+  }
+
+.list--glasses LI {
+  text-indent: 0 !important;
+
+  &:before {
+    content: none !important;
+    }
+  }
+
+.list--glasses LI + LI {
+  margin-top: 1.2em;
+  }
+
+.list--glasses__sign {
+  position: relative;
+  padding: 0 .2em;
+  }
 /*.ie8:before {
   background-position: -90px 0;
   }*/
