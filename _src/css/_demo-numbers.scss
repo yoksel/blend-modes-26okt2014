@@ -1,22 +1,23 @@
 .demo-numbers__list {
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     margin: auto !important;
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    text-align: center;
     }
     .demo-numbers__item {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        margin: 0 .7em 1.6em;
         border-radius: 50%;
-        box-shadow: 0 0 0 15px #FFF;
+        box-shadow: 0 0 0 10px #FFF;
         text-align: center;
         text-indent: 0 !important;
-        line-height: 390px;
+        line-height: 240px;
         background-color: #FFF;
         /*text-shadow: 0 0 1em rgb(0,0,0);*/
         background-position: center center;
@@ -39,11 +40,16 @@
         &:nth-child(4) {
             background-image: url(http://img-fotki.yandex.ru/get/3001/5091629.a2/0_85de8_117f440f_L);
             }
+        &:nth-child(6) {
+            background-image: linear-gradient(
+                lightblue, greenyellow);
+            /*background-size: 3em 3em;*/
+            }
 
         }
         .demo-numbers__item SPAN {
             mix-blend-mode: difference;
-            font-size: 15em;
-            font-weight: bold;
+            font-size: 10em;
+            /*font-weight: bold;*/
             color: #FFF;
             }

@@ -40,7 +40,7 @@
             <p class="tooltip--glasses">Скопируйте ссылку на флаг в адресную строку браузера, включите флаг и&nbsp;перезапустите браузер.</p>
             <h4>Так себе:</h4>
             <ul class="list--glasses">
-                <li><span class="browser safari browser-partial"></span> <span class="list--glasses__sign">и</span> <span class="browser firefox browser-partial"></span>
+                <li><span class="browser safari"></span> <span class="list--glasses__sign">и</span> <span class="browser firefox"></span>
                 </li>
             </ul>
         </div>
@@ -200,12 +200,17 @@
     </div></section>
 
     <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">PNG</h2>
+    </div></section>
+
+    <!-- Slide -->
     <section class="slide bg--stripes"><div>
 
         <ul class="demo-knight-png">
             <li class="demo-knight-png__item">
                 <img src="assets/img/demos/knights/knight-M.jpg"/>
-                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
+                <div class="demo-knight-png__weight">JPEG, 20 Kb</div>
             </li>
 
             <li class="demo-knight-png__item next">
@@ -215,10 +220,49 @@
 
             <li class="demo-knight-png__item next">
                 <img src="assets/img/demos/knights/knight-M-png8.png"/>
-                <div class="demo-knight-png__weight">PNG-8, 31 Kb</div>
+                <div class="demo-knight-png__weight">PNG-8, 28 Kb</div>
             </li>
         </ul>
 
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide"><div>
+        <h2 class="free-fly">SVG-маски</h2>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--stripes"><div>
+
+        <svg class="svg-defs">
+          <mask id="mask">
+             <image xlink:href="assets/img/demos/knights/knight-mask-M.png" width="240" height="354"/>
+          </mask>
+        </svg>
+
+        <ul class="demo-knight-svg">
+            <li class="demo-knight-svg__item">
+                <img src="assets/img/demos/knights/knight-M.jpg">
+                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
+            </li>
+
+            <li class="demo-knight-svg__item next"  data-sign="+">
+                <img src="assets/img/demos/knights/knight-mask-M.png">
+                <div class="demo-knight-png__weight">PNG, 4 Kb</div>
+            </li>
+
+            <li class="demo-knight-svg__item next" data-sign="=">
+                <svg class="svg-knight" viewBox="0 0 240 354">
+                    <image xlink:href="assets/img/demos/knights/knight-M.jpg" width="100%" height="100%"
+                          mask="url(#mask)"/>
+                </svg>
+                <div class="demo-knight-png__weight">JPEG + PNG, 25 Kb</div>
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="free-fly">Режимы наложения</h2>
     </div></section>
 
     <!-- Slide -->
@@ -287,41 +331,6 @@
 
     <!-- Slide -->
     <section class="slide"><div>
-        <h2 class="free-fly">SVG-маски</h2>
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide bg--stripes"><div>
-
-        <svg class="svg-defs">
-          <mask id="mask">
-             <image xlink:href="assets/img/demos/knights/knight-mask-M.png" width="240" height="354"/>
-          </mask>
-        </svg>
-
-        <ul class="demo-knight-svg">
-            <li class="demo-knight-svg__item">
-                <img src="assets/img/demos/knights/knight-M.jpg">
-                <div class="demo-knight-png__weight">JPEG, 21 Kb</div>
-            </li>
-
-            <li class="demo-knight-svg__item next"  data-sign="+">
-                <img src="assets/img/demos/knights/knight-mask-M.png">
-                <div class="demo-knight-png__weight">PNG, 4 Kb</div>
-            </li>
-
-            <li class="demo-knight-svg__item next" data-sign="=">
-                <svg class="svg-knight" viewBox="0 0 240 354">
-                    <image xlink:href="assets/img/demos/knights/knight-M.jpg" width="100%" height="100%"
-                          mask="url(#mask)"/>
-                </svg>
-                <div class="demo-knight-png__weight">JPEG + PNG, 25 Kb</div>
-            </li>
-        </ul>
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide"><div>
         <h2 class="free-fly">Спецэффекты</h2>
     </div></section>
 
@@ -340,7 +349,7 @@
 
     <!-- Slide -->
     <section class="slide"><div>
-        <h2 class="free-fly">Надписи, которые видно всегда</h2>
+        <h2 class="free-fly">Надписи, которые<br> видно всегда</h2>
     </div></section>
 
     <!-- Slide -->
@@ -352,6 +361,7 @@
           <li class="demo-numbers__item next"><span>3</span></li>
           <li class="demo-numbers__item next"><span>4</span></li>
           <li class="demo-numbers__item next"><span>5</span></li>
+          <li class="demo-numbers__item next"><span>6</span></li>
         </ul>
         </div>
     </div></section>
@@ -483,8 +493,8 @@
     <div class="next"><h3>Проблемы</h3>
     <ul>
         <li><code>mix-blend-mode</code> + <code>background-blend-mode</code> могут уронить Firefox</li>
-        <li>в Firefox градиенты с <code>color-burn</code> отрисовываются без полутонов</li>
-        <li>в Safari не работают <code>hue</code>, <code>saturation</code>, <code>color</code>, <code>luminosity</code></li>
+        <li class="next">в Firefox градиенты с <code>color-burn</code> отрисовываются без полутонов</li>
+        <li class="next">в Safari не работают режимы <code>hue</code>, <code>saturation</code>, <code>color</code>, <code>luminosity</code></li>
     </ul></div>
     </div></section>
 
@@ -508,7 +518,7 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="free-fly">SVG-фильтры</h2>
+        <h2 class="free-fly">SVG</h2>
     </div></section>
 
     <!-- Slide -->

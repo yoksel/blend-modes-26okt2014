@@ -28,7 +28,7 @@ HTML {
   border-radius: 50%;
   box-shadow: 0 0 0 7px #FFF;
 
-  :target {
+  :target & {
     animation: bird-move 1.68s infinite ease-out;
   }
 }
