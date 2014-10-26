@@ -45,6 +45,7 @@
      &:hover {
         background-color: transparent;
         box-shadow: 0 0 40px 5px rgba(0,0,0,1);
+        -webkit-filter: none;
         }
     }
     &:after {

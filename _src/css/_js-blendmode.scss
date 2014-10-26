@@ -5,12 +5,14 @@
     .js-blendmode--off {
         background-blend-mode: normal !important;
         mix-blend-mode: normal !important;
+        -webkit-filter: none !important;
 
         *,
         *:before,
         *:after {
             background-blend-mode: normal !important;
             mix-blend-mode: normal !important;
+            -webkit-filter: none !important;
             }
         .text-on {
             display: none;
