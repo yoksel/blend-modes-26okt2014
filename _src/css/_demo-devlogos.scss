@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-blend-mode: luminosity;
+    -webkit-filter: grayscale(100%);
     text-indent: 0 !important;
 
     transition: background-color .5s;

@@ -12,6 +12,7 @@
      background: white url() 0 -1px no-repeat;
      background-size: cover;
      background-blend-mode: luminosity;
+     -webkit-filter: grayscale(100%);
      line-height: 0;
      border: 15px solid #FFF;
      border-radius: 30px;

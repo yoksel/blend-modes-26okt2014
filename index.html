@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en"  id="show-tips">
 <head>
     <title>Режимы наложения в CSS</title>
@@ -21,12 +21,8 @@
         <p>Бухвалова Юлия, Livejournal</p>
     </header>
 
-    <section class="slide slide--imgcenter js-togglemode js-blendmode--off" id="Cover"><div>
-        <h2 class="free-fly">Режимы наложения в CSS</h2>
-    </div></section>
-
     <!-- Slide -->
-    <section class="slide slide--vlm"><div>
+    <section class="slide"><div>
         <div class="slide__content">
             <h4>Презентация в лучшем виде:</h4>
             <ul class="list--glasses">
@@ -38,12 +34,16 @@
                 </li>
             </ul>
             <p class="tooltip--glasses">Скопируйте ссылку на флаг в адресную строку браузера, включите флаг и&nbsp;перезапустите браузер.</p>
-            <h4>Так себе:</h4>
+            <h4>Так себе вид:</h4>
             <ul class="list--glasses">
                 <li><span class="browser safari"></span> <span class="list--glasses__sign">и</span> <span class="browser firefox"></span>
                 </li>
             </ul>
         </div>
+    </div></section>
+
+    <section class="slide slide--imgcenter js-togglemode js-blendmode--off" id="Cover"><div>
+        <h2 class="free-fly">Режимы наложения в CSS</h2>
     </div></section>
 
     <!-- Slide -->
@@ -440,6 +440,21 @@
     </div></section>
 
     <!-- Slide -->
+    <section class="slide js-togglemode"><div>
+        <div class="demo-sea">
+            <h1 class="demo-sea__title">Sea</h1>
+        </div>
+    </div></section>
+
+    <!-- Slide -->
+    <section class="slide bg--dark js-togglemode"><div>
+        <div class="demo-shadows">
+            <div class="demo-shadows__shadows"></div>
+            <div class="demo-shadows__cells"></div>
+        </div>
+    </div></section>
+
+    <!-- Slide -->
     <section class="slide"><div>
         <h2 class="free-fly">Isolation</h2>
     </div></section>
@@ -476,6 +491,13 @@ masking
         <code>    isolation: <mark>isolate</mark>; </code>
         <code>    }</code></pre>
 
+        <pre class="next"><code>.block { </code>
+        <code>    opacity: .5; <span class="comment">/* или */</span></code>
+        <code>    transform: translateZ(0); <span class="comment">/* или */</span></code>
+        <code>    mask: url(#mask); <span class="comment">/* или */</span></code>
+        <code>    filter: blur(); <span class="comment">/* или */</span></code>
+        <code>    }</code></pre>
+
         <!-- <ul>
             <li>opacity</li>
             <li>filters</li>
@@ -484,21 +506,6 @@ masking
             <li>masking</li>
         </ul> -->
 
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide js-togglemode"><div>
-        <div class="demo-sea">
-            <h1 class="demo-sea__title">Sea</h1>
-        </div>
-    </div></section>
-
-    <!-- Slide -->
-    <section class="slide bg--dark js-togglemode"><div>
-        <div class="demo-shadows">
-            <div class="demo-shadows__shadows"></div>
-            <div class="demo-shadows__cells"></div>
-        </div>
     </div></section>
 
     <!-- Slide -->
